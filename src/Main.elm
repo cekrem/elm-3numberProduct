@@ -74,9 +74,6 @@ view inputString =
 
             else
                 "incorrect syntax"
-
-        _ =
-            Debug.log "maybeNumbers" maybeNumbers
     in
     div
         [ style "display" "flex"
