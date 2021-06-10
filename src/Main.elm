@@ -86,8 +86,16 @@ view inputString =
         [ input
             [ onInput Input
             , placeholder "1, 2, 3, 4"
-            , style "padding" "1rem"
-            , style "background" "rgba(255, 255, 255, 0.9)"
+            , style "width" "50%"
+            , style "padding" "0rem"
+            , style "border" "0.2rem solid rgba(0, 0, 0, 0.05)"
+            , style "border-radius" "0.2rem"
+            , style "outline" "none"
+            , style "background" "rgba(255, 255, 255, 0.95)"
+            , style "text-align" "center"
+            , style "font-size" <|
+                String.fromInt (100 // max (String.length inputString) 10)
+                    ++ "vw"
             ]
             []
         , div
